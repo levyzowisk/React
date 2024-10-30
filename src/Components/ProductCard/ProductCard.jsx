@@ -1,10 +1,10 @@
 import "./style.css"
 
-
 function ProductCard(props) {
     return(
 <>
-        <article>
+        {/* <article className="article"> */}
+        <article className="article">
             <figure className="containerImg">
                 <img src={props.image} alt="" />
                 <div className="off">
@@ -14,10 +14,10 @@ function ProductCard(props) {
 
             <section className="cardSection" >
                 <h4>{props.title}</h4>
-                <p>{props.nomeProduto}</p>
+                <h5>{props.nomeProduto}</h5>
                 <div className="priceCard">
-                    <p>{props.preco}</p>
-                    <p>{props.precodesconto}</p>
+                    <p className="price">{props.preco}</p>
+                    <p className="pricedesconto">{props.precodesconto}</p>
                 </div>
             </section>
         </article>

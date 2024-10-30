@@ -1,7 +1,85 @@
-* {
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-article .containerimg img{
-    width: 50%;
+.article {
+    display: flex;
+    flex-direction: column;
+    /* gap: 0rem; */
+}
+
+.containerImg{
+    border: 2px solid red;
+    width: 292px;   
+    height: 270px;
+
+}
+.containerImg img{
+    width: inherit;
+    position: absolute;
+    /* height: inherit; */
+    box-shadow: 1px 1px 40px 1px rgba(0, 0, 0, 0.064);
+}
+
+.containerImg .off {
+    left: 13px;
+    width: 6.5rem;
+    height: 1.5rem;
+    top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color:  #E7FF86;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: #474747;
+
+    border-radius: 8px
+;
+}
+
+
+
+.cardSection h4 {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #474747;
+    margin-bottom: 0.3rem;
+}
+
+.cardSection h5{
+    color: #474747;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    word-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.priceCard{
+    display: flex;
+    gap: 1rem;
+
+}
+
+.price {
+    text-decoration: line-through; 
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #474747;
+}
+
+ .pricedesconto {
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    color: #000000;
 }
