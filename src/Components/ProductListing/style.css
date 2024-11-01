@@ -1,8 +1,5 @@
-.productListing{
-        /* width: 100vw; */
-    /* box-sizing: border-box; */
-    display: flex;
-    /* flex-direction: row; */
-    /* flex-wrap: wrap; */
-    justify-content: space-around;
+.productListing {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Limita a quatro colunas */
+  gap: 16px; /* Ajuste o espaço entre os itens */
 }
